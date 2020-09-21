@@ -1,0 +1,105 @@
+<div class="container footer">
+    <div class="row w-100">
+      <div class="col-lg-12 p-0">
+        <div class="container mt-3">
+          <h2>Form chỉnh sửa dịch vụ</h2>
+          <form [formGroup]="fServiceEditForm" (ngSubmit)="saveEdit()">
+            <div class="row">
+              <div class="col">
+                <label for="">Tên dịch vụ</label>
+                <input type="text" class="form-control" placeholder="" formControlName="fServiceName">
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Mã dịch vụ</label>
+                  <input type="text" class="form-control" placeholder="" formControlName="fServiceCode">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="validationCode()">
+                  Sai định dạng mã !
+                </div>
+              </div>
+              <div class="col">
+                <label for="">Trạng thái</label>
+                <select class="form-control" id="exampleFormControlSelect1" formControlName="status">
+                  <option value="Còn">Còn</option>
+                  <option value="Hết">Hết</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <label for="">Số người tối đa</label>
+                <input type="text" class="form-control" placeholder="" formControlName="maxPeople">
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Chi phí thuê</label>
+                  <input type="text" class="form-control" placeholder="" formControlName="cost">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="validationPostitiveNumber('cost')">
+                  Thông tin không hợp lệ !
+                </div>
+              </div>
+  
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <label for="">Diện tích khu vực</label>
+                <input type="text" class="form-control" placeholder="" formControlName="area">
+              </div>
+              <div class="col">
+                <label for="">Diện tích hồ bơi</label>
+                <input type="text" class="form-control" placeholder="" formControlName="poolArea">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <div class="form-group">
+                  <label for="">Số tầng</label>
+                  <input type="text" class="form-control" placeholder="" formControlName="floors">
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="validationPostitiveNumber('floors')">
+                  Thông tin không hợp lệ !
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Loại dịch vụ</label>
+                  <select class="form-control" id="exampleFormControlSelect1" formControlName="fServiceType">
+                    <option value="Villa">Villa</option>
+                    <option value="House">House</option>
+                    <option value="Room">Room</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <label for="">Mô tả tiện nghi</label>
+                <input type="text" class="form-control" placeholder="" formControlName="description">
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Kiểu thuê</label>
+                  <select class="form-control" id="exampleFormControlSelect1" formControlName="rentType">
+                    <option value="Năm">Năm</option>
+                    <option value="Tháng">Tháng</option>
+                    <option value="Ngày">Ngày</option>
+                    <option value="Giờ">Giờ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <div><input type="button" value="Huỷ bỏ" class="btn btn-lg btn-outline float-right" routerLink="/fservice-list">
+                </div>
+                <div><button type="submit" class="btn btn-lg btn-danger float-right mr-3" [disabled]="fServiceEditForm.invalid">Lưu thay đổi</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

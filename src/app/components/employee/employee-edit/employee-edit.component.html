@@ -1,0 +1,132 @@
+<div class="container" style="margin-bottom: 130px;">
+  <div class="row w-100">
+    <div class="col-lg-12 p-0">
+      <div class="container mt-5">
+        <h2>Form chỉnh sửa nhân viên</h2>
+        <form [formGroup]="employeeEditForm" (ngSubmit)="saveEdit()">
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlSelect1">Họ tên</label>
+              <input type="text" class="form-control" placeholder="" formControlName="employeeName">
+              <div class="alert alert-danger" role="alert" *ngIf="validationNameAndCheckTouched()">
+                Trường này không được để trống !
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Mã nhân viên</label>
+                <input type="text" class="form-control" placeholder="" formControlName="employeeCode">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationCodeAndCheckTouched()">
+                Sai định dạng mã !
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Số CMND</label>
+                <input type="text" class="form-control" placeholder="" formControlName="idCard">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationIdCard()">
+                CMND 9 hoặc 12 số !
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Địa chỉ</label>
+                <input type="text" class="form-control" placeholder="" formControlName="address">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="">Ngày sinh</label>
+              <input type="date" class="form-control" placeholder="" formControlName="birthday">
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Số điện thoại</label>
+                <input type="text" class="form-control" placeholder="" formControlName="phoneNumber">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationPhoneNumber()">
+                Sai định dạng sdt !
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" placeholder="" formControlName="email">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationEmail()">
+                Email định dạng: [abc@abc.com]
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Giới tính</label>
+                <input type="text" class="form-control" placeholder="" formControlName="gender">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="">Trình độ</label>
+              <select class="form-control" id="exampleFormControlSelect1" formControlName="employeeLevel">
+                <option value="Đại học">Đại học</option>
+                <option value="Cao đẳng">Cao đẳng</option>
+                <option value="Trung cấp">Trung cấp</option>
+                <option value="Trung học phổ thông">Trung học phổ thông</option>
+                <option value="Không có trình độ">Không có trình độ</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="">Vị trí</label>
+              <select class="form-control" id="exampleFormControlSelect1" formControlName="employeeRole">
+                <option value="Tổng giám đốc">Tổng giám đốc</option>
+                <option value="Trưởng phòng">Trưởng phòng</option>
+                <option value="Phó phòng">Phó phòng</option>
+                <option value="Nhân viên">Nhân viên</option>
+                <option value="Bảo vệ">Bảo vệ</option>
+                <option value="Lao công">Lao công</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="">Bộ phận</label>
+              <select class="form-control" id="exampleFormControlSelect1" formControlName="employeeDepartment">
+                <option value="Lễ tân">Lễ tân</option>
+                <option value="Buồng phòng">Buồng phòng</option>
+                <option value="Quản lý">Quản lý</option>
+                <option value="Nhà hàng">Nhà hàng</option>
+                <option value="Vệ sinh môi trường">Vệ sinh môi trường</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="">Lương</label>
+              <input type="text" class="form-control" placeholder="" formControlName="salary">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div>
+                <input type="button" value="Huỷ bỏ" class="btn btn-lg btn-outline float-right"
+                  routerLink="/employee-list">
+              </div>
+              <div>
+                <input type="submit" value="Lưu thay đổi" class="btn btn-lg btn-danger float-right mr-3"
+                  [disabled]="employeeEditForm.invalid">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div>Information</div>
+<pre>{{ employeeCreateForm.value | json }}</pre> -->

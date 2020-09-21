@@ -1,0 +1,96 @@
+<div class="container footer">
+  <div class="row w-100">
+    <div class="col-lg-12 p-0">
+      <div class="container mt-5">
+        <h2>Form đăng kí khách hàng</h2>
+        <form [formGroup]="customerRegisterForm" (ngSubmit)="addNewCustomer()">
+          <div class="row">
+            <div class="col">
+              <label for="">Họ tên</label>
+              <input type="text" class="form-control" placeholder="" formControlName="customerName">
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Mã khách hàng</label>
+                <input type="text" class="form-control" placeholder="" formControlName="customerCode">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationCustomerCode()">
+                Sai định dạng mã !
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Loại khách</label>
+                <select class="form-control" id="exampleFormControlSelect1" formControlName="customerType">
+                  <option value="" selected disabled> -- Chọn loại khách hàng -- </option>
+                  <option value="Diamond">Diamond</option>
+                  <option value="Platinum">Platinum</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+                  <option value="Member">Member</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <label for="">Giới tính</label>
+              <input type="text" class="form-control" placeholder="" formControlName="gender">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Số CMND</label>
+                <input type="text" class="form-control" placeholder="" formControlName="idCard">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationIdCard()">
+                CMND 9 hoặc 12 số !
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="">Số điện thoại</label>
+                <input type="text" class="form-control" placeholder="" formControlName="phoneNumber">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationPhoneNumber()">
+                SDT định dạng: [090xxxxxxx, 091xxxxxxx, (84)+90xxxxxxx, (84)+91xxxxxxx]
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="">Ngày sinh</label>
+              <input type="date" class="form-control" placeholder="" formControlName="birthday">
+            </div>
+            <div class="col">
+              <label for="">Địa chỉ</label>
+              <input type="text" class="form-control" placeholder="" formControlName="address">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" placeholder="" formControlName="email">
+              </div>
+              <div class="alert alert-danger" role="alert" *ngIf="validationEmail()">
+                Email định dạng: [abc@abc.com]
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div>
+                <a type="button" class="btn btn-lg btn-outline float-right" routerLink="/customer-list">Huỷ bỏ</a>
+              </div>
+              <div>
+                <input type="submit" value="Đăng kí" class="btn btn-lg btn-danger float-right mr-3">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

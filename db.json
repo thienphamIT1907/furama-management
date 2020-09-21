@@ -1,0 +1,369 @@
+{
+  "customerList": [
+    {
+      "id": 1,
+      "customerCode": "KH-0004",
+      "customerType": "Platinum",
+      "customerName": "Khoa",
+      "birthday": "1999-10-05",
+      "idCard": "091884882",
+      "phoneNumber": "0901111111",
+      "email": "khoa@gmail.com",
+      "address": "Ha Noi",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "id": 4,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "id": 6,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "customerCode": "KH-0005",
+      "customerType": "Diamond",
+      "customerName": "Thien",
+      "birthday": "1990-09-10",
+      "idCard": "091884882",
+      "phoneNumber": "0019884882",
+      "email": "thien@gmail.com",
+      "address": "Da Nang",
+      "gender": "male"
+    },
+    {
+      "customerCode": "KH-1000",
+      "customerType": "Diamond",
+      "customerName": "Vân Nguyễn",
+      "birthday": "1991-06-21",
+      "idCard": "123123123",
+      "phoneNumber": "0901231231",
+      "email": "vannguyen@gmail.com",
+      "address": "Da Nang",
+      "gender": "Female",
+      "id": 9
+    }
+  ],
+  "employeeList": [
+    {
+      "id": 1,
+      "employeeCode": "NV-0981",
+      "employeeName": "Dung",
+      "employeeRole": "Phó phòng",
+      "employeeLevel": "Cao đẳng",
+      "employeeDepartment": "Buồng phòng",
+      "birthday": "1989-06-29",
+      "idCard": "123123123",
+      "salary": "10000",
+      "phoneNumber": "0908888888",
+      "email": "dung@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female",
+      "employee": ""
+    },
+    {
+      "id": 2,
+      "employeeCode": "NV-001",
+      "employeeName": "Nhi",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "09398588178",
+      "salary": "5.000.000",
+      "phoneNumber": "0948886886",
+      "email": "nhi@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female"
+    },
+    {
+      "id": 3,
+      "employeeCode": "NV-0011",
+      "employeeName": "Nhi",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "123123123",
+      "salary": "123333",
+      "phoneNumber": "0908886886",
+      "email": "nhi@yahoo.com",
+      "address": "Ha NOi",
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "employeeCode": "NV-001",
+      "employeeName": "Thuy",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "09398588178",
+      "salary": "5.000.000",
+      "phoneNumber": "0948886886",
+      "email": "nhi@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female"
+    },
+    {
+      "id": 5,
+      "employeeCode": "NV-001",
+      "employeeName": "Thuy",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "09398588178",
+      "salary": "5.000.000",
+      "phoneNumber": "0948886886",
+      "email": "nhi@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female"
+    },
+    {
+      "id": 6,
+      "employeeCode": "NV-001",
+      "employeeName": "Thuy",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "09398588178",
+      "salary": "5.000.000",
+      "phoneNumber": "0948886886",
+      "email": "nhi@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female"
+    },
+    {
+      "id": 7,
+      "employeeCode": "NV-001",
+      "employeeName": "Thuy",
+      "employeeRole": "Tổng giám đốc",
+      "employeeLevel": "Đại học",
+      "employeeDepartment": "Quản lý",
+      "birthday": "1989-07-20",
+      "idCard": "09398588178",
+      "salary": "5.000.000",
+      "phoneNumber": "0948886886",
+      "email": "nhi@yahoo.com",
+      "address": "Nam Dinh",
+      "gender": "female"
+    },
+    {
+      "employeeId": "",
+      "employeeCode": "NV-1111",
+      "employeeName": "A",
+      "employeeRole": "Trưởng phòng",
+      "employeeLevel": "Trung cấp",
+      "employeeDepartment": "Buồng phòng",
+      "birthday": "2020-08-12T17:00:00.000Z",
+      "idCard": "123123123",
+      "salary": "10000",
+      "phoneNumber": "0908888888",
+      "email": "a@gmail.com",
+      "address": "No",
+      "gender": "male",
+      "id": 8
+    }
+  ],
+  "fServiceList": [
+    {
+      "id": 1,
+      "fServiceCode": "DV-0001",
+      "fServiceName": "Vip Villa",
+      "area": 500,
+      "poolArea": 800,
+      "floors": 2,
+      "maxPeople": 4,
+      "cost": 8000,
+      "rentType": "Ngày",
+      "fServiceType": "Villa",
+      "status": "active",
+      "description": "beautiful!"
+    },
+    {
+      "id": 2,
+      "fServiceCode": "DV-0001",
+      "fServiceName": "Vip Villa",
+      "area": 500,
+      "poolArea": 800,
+      "floors": 2,
+      "maxPeople": 4,
+      "cost": 8000,
+      "rentType": "Ngày",
+      "fServiceType": "Villa",
+      "status": "active",
+      "description": "beautiful!"
+    },
+    {
+      "id": 3,
+      "fServiceCode": "DV-0001",
+      "fServiceName": "Vip Villa",
+      "area": 500,
+      "poolArea": 800,
+      "floors": 2,
+      "maxPeople": 4,
+      "cost": 8000,
+      "rentType": "Ngày",
+      "fServiceType": "Villa",
+      "status": "active",
+      "description": "so beautiful!"
+    },
+    {
+      "id": 4,
+      "fServiceCode": "DV-0001",
+      "fServiceName": "Vip Villa",
+      "area": 500,
+      "poolArea": 800,
+      "floors": 2,
+      "maxPeople": 4,
+      "cost": 8000,
+      "rentType": "Ngày",
+      "fServiceType": "Villa",
+      "status": "active",
+      "description": "beautiful!"
+    },
+    {
+      "id": 5,
+      "fServiceCode": "DV-0001",
+      "fServiceName": "Vip Villa",
+      "area": 500,
+      "poolArea": 800,
+      "floors": 2,
+      "maxPeople": 4,
+      "cost": 8000,
+      "rentType": "Ngày",
+      "fServiceType": "Villa",
+      "status": "active",
+      "description": "beautiful!"
+    }
+  ],
+  "contractList": [
+    {
+      "id": 1,
+      "employee": "Thuy",
+      "customer": "Khoa",
+      "fService": "Vip Villa",
+      "startDate": "2020-09-08",
+      "endDate": "2020-09-20",
+      "preCost": 50000,
+      "contract": ""
+    },
+    {
+      "id": 2,
+      "employee": "Thien",
+      "customer": "Hung",
+      "fService": "Villa Vip 1",
+      "startDate": "2020-09-08",
+      "endDate": "2020-09-20",
+      "preCost": 50000
+    },
+    {
+      "id": 3,
+      "employee": "Thien",
+      "customer": "Hung",
+      "fService": "Villa Vip 1",
+      "startDate": "2020-09-08",
+      "endDate": "2020-09-20",
+      "preCost": 50000
+    },
+    {
+      "id": 4,
+      "employee": "Thien",
+      "customer": "Hung",
+      "fService": "Villa Vip 1",
+      "startDate": "2020-09-08",
+      "endDate": "2020-09-20",
+      "preCost": 50000
+    }
+  ],
+  "contractDetailList": [
+    {
+      "id": 1,
+      "contractName": "Villa Vip 1",
+      "fServiceBonusName": "Massage",
+      "amount": 500000
+    },
+    {
+      "id": 2,
+      "contractName": "Hop dong 2",
+      "fServiceBonusName": "Massage",
+      "amount": 500000
+    },
+    {
+      "id": 3,
+      "contractName": "Hop dong 3",
+      "fServiceBonusName": "Massage",
+      "amount": 500000
+    },
+    {
+      "id": 4,
+      "contractName": "Hop dong 4",
+      "fServiceBonusName": "Massage",
+      "amount": 500000
+    },
+    {
+      "contractDetail": "",
+      "contractName": "Villa Vip 1",
+      "fServiceBonusName": "Thức uống",
+      "amount": "1",
+      "id": 6,
+      "fServiceBonus": ""
+    }
+  ]
+}
